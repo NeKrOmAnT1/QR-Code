@@ -1,0 +1,25 @@
+﻿<Window x:Class="Active.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Active"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border Background="MediumPurple" 
+        CornerRadius="45" >
+            <StackPanel>
+                <TextBlock Text="Здесь будет QR-Code" Width="150" Margin="10"/>
+                <Image x:Name="image_qrcoder" Width="150" Margin="10" Height="150" />
+                <TextBlock Text="Введи что-нибудь" TextAlignment="Center" Width="130" />
+                <TextBox Background="MediumPurple" x:Name="tb_content" TextAlignment="Center" Margin="20"   TextWrapping="Wrap"  VerticalAlignment="Top" Width="523" Height="55"/>
+                <Button Background="MediumPurple" Click="btn_generate_Click" x:Name="btn_generate" Content="Сгенерировать" Margin="20" VerticalAlignment="Top" Height="65" Width="354"/>
+            </StackPanel>
+
+
+        </Border>
+
+
+    </Grid>
+</Window>
